@@ -1,5 +1,5 @@
 :root {
-  font-family: "Ropa Sans", sans-serif;
+  font-family: "Lexend", sans-serif;
 }
 .html {
   scroll-behavior: smooth;
@@ -16,6 +16,13 @@ body {
   );
   background-size: 2rem 2rem;
   background-repeat: round;
+}
+h1,
+h2 {
+  font-family: "Lexend", sans-serif;
+}
+p {
+  font-family: "Ropa Sans", sans-serif;
 }
 
 .container {
@@ -52,7 +59,6 @@ a {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
-
 .auto-type {
   color: #10ce8c;
 }
@@ -64,7 +70,6 @@ a {
   margin-top: 30px;
   gap: 1rem;
 }
-
 .logo {
   position: relative;
   font-size: 1.5rem;
@@ -80,10 +85,9 @@ a {
   margin-top: calc(3rem + 30px);
   max-width: fit-content;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 2rem;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
 }
-
 .about-title {
   margin-top: 30rem;
   text-align: center;
@@ -93,6 +97,8 @@ a {
   margin-top: 15rem;
   text-align: center;
   font-size: 3rem;
+}
+.journey-title {
 }
 
 .aboutme,
@@ -110,11 +116,12 @@ a {
 }
 
 .journey-title {
-  margin-top: 7.5rem;
+  margin-top: 7rem;
   text-align: center;
   font-size: 3rem;
 }
-span {
+span,
+.myskills-container i {
   color: #10ce8c;
 }
 .list-item {
@@ -142,7 +149,7 @@ i:hover,
   justify-content: center;
   grid-gap: 30px;
   margin: 0 auto;
-  margin-top: 7rem;
+  margin-top: 2rem;
 }
 .project-title {
   text-align: center;
@@ -215,6 +222,11 @@ i:hover,
   margin: 0 auto;
   display: flex;
   max-width: fit-content;
+}
+.contact-info {
+  background-color: #17181950;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .contact-subtitle {
@@ -329,9 +341,13 @@ i:hover,
   .project-container {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .about {
+  .about,
+  .skills-container {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  .logo {
+    margin-left: 8rem;
   }
 }
 @media screen and (max-width: 1200px) {
