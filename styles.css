@@ -238,6 +238,9 @@ i:hover,
 .contact-subtitle {
   font-size: 2rem;
 }
+.footer__social {
+  margin-top: 5rem;
+}
 .box-area {
   top: 0;
   left: 0;
@@ -251,7 +254,7 @@ i:hover,
   width: 19px;
   height: 19px;
   background-color: #1718193d;
-  animation: animate 10s linear infinite;
+  animation: animate 7s linear infinite;
 }
 .box-area li:nth-child(1) {
   left: 86%;
