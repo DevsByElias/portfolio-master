@@ -104,8 +104,6 @@ a {
   text-align: center;
   font-size: 3rem;
 }
-.journey-title {
-}
 
 .aboutme,
 .coding-journey {
@@ -183,11 +181,12 @@ i:hover,
   margin-top: 15px;
 }
 .project-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition: all 0.3s ease;
   cursor: pointer;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.144),
     0 4px 6px -4px rgba(0, 0, 0, 0.103);
+  color: #10ce8c;
 }
 
 .project-item p {
