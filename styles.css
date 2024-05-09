@@ -238,6 +238,7 @@ i {
   border-radius: 10px;
   margin: 10px;
   padding: 1.6rem;
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.144);
   position: relative;
 }
 .project-item h3 {
@@ -283,16 +284,19 @@ i {
   align-items: center;
   font-size: 1.5rem;
 }
+.github-container a {
+  border-bottom: 2px solid rgb(129 140 248);
+}
 .skills-container {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
   gap: 2rem;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
   overflow: hidden;
-  box-shadow: 0 px 20px -10px rgba(0, 0, 0, 0.144);
+  box-shadow: 0 5px 20px -10px rgba(0, 0, 0, 0.144);
 }
 
 .myskills-container {
