@@ -16,24 +16,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link  rel="icon" href="ghost-line.png" type="image/png">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <title>DevsByElias</title>
   </head>
   <body>
     <div class="container">
-      <div class="animation-area">
-        <ul class="box-area">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+      <body>
+        <div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+        </div>
+      </body>
       <div class="header">
         <div>
           <h2 class="logo">DevsBy<span>Elias</span></h2>
@@ -55,8 +49,8 @@
       </div>
       <div class="hero">
         <div class="info">
-          <h1>Hello, I'm <span>Elias Aitovaara</span></h1>
-          <h3>I'm a <span class="auto-type"></span></h3>
+          <h1>Hi👋, I'm <span class="span-color">Elias</span></h1>
+          <h3><span class="auto-type"></span></h3>
          
         </div>
         <div class="social-links">
@@ -81,7 +75,72 @@
           
         </div>
       </div>
-      <h2 class="project-title">My <span>Projects</span></h2>
+
+      <h2 class="about-title">What I Do</h2>
+      <div class="about">
+        <div class="aboutme">
+          <h2 class="do-title">IT-Support Specialist <i class="ri-tools-fill"></i></h2>
+          <p>
+            As an IT-Support Specialist, I'm all about keeping the tech wheels turning smoothly for organizations. From tackling pesky hardware glitches to untangling network snarls, I thrive on solving tech puzzles. In dynamic environments, every hiccup is an opportunity to shine and show off my problem-solving chops. 
+          </p>
+          <h2 class="do-title">Frontend Development <i class="ri-code-s-slash-fill"></i></i></h2>
+          <p>
+            Alongside with my job, I explored frontend development to enhance user experiences. Although coding is a hobby, I've become proficient in HTML, CSS, and JavaScript, crafting intuitive interfaces.
+          </p>
+          <h2 class="do-title">Student <i class="ri-graduation-cap-fill"></i></i></h2>
+          <p>
+            Always learning and growing, I'm all about expanding my horizons. With a burning passion for IT, I've delved deep into programming languages and intricate systems, honing my skills through both study and hands-on tinkering.
+          </p>
+        
+        </div>
+      </div>
+      
+      <div class="skills-container">
+        <h2 class="attribute-title">My Expertise</h2>
+        <div class="myskills-container">
+          <div>
+            <dotlottie-player src="https://lottie.host/0ae3424f-d74a-43db-a666-6654f5b99a31/Shkia48zCJ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            <h3 class="tag1">User Assistance</h3>
+          </div>
+          <div>
+            <dotlottie-player src="https://lottie.host/428a9123-ddcb-4290-be23-d06fce189324/rtlCUDZxJs.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            <h3 class="tag1">Technical Troubleshooting</h3>
+          </div>
+          <div>
+            <dotlottie-player src="https://lottie.host/efd0eb78-fc30-40f2-8b9a-c11a5a99c6e2/laYhuvigaG.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            <h3 class="tag1">Software Setup</h3>
+          </div>
+          <div>
+            <dotlottie-player src="https://lottie.host/209d7d6f-14d1-4528-ba09-dad089370fd8/l111vhBmvF.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+            <h3 class="tag1">Hardware Maintenance</h3>
+          </div>  
+        </div>  
+        <div class="tag-container">    
+        <div class="myskills-container">
+          <div class="tag"><i class="ri-html5-line"></i>HTML</div>
+          <div class="tag"><i class="ri-css3-line"></i>CSS</div>
+          <div class="tag"><i class="ri-javascript-line"></i>JavaScript</div>
+          <div class="tag"><i class="ri-terminal-box-line"></i>PowerShell</div>   
+        </div>
+        </div>  
+      </div>  
+      <h2 class="journey-title">My Journey</h2>
+      <div class="coding-journey">
+        <div class="myjourney">
+          <p>
+            Right now, my days are filled with troubleshooting and problem-solving as a Support Specialist at Dustin Finland Oy. Outside of work, I'm a coding enthusiast, spending my free time exploring JavaScript and gearing up to dive into React and Tailwind CSS 🔧
+          </p>
+          <p> Living in Espoo, Finland, provides a great backdrop for both work and play. I'm also studying IT-Automation, which keeps me busy and constantly learning 🎓</p>
+          <p>
+            Coding is where my passion lies, and I'm always excited to learn new things and tackle new challenges in the tech world 💻
+          </p>
+          <p>
+            As a self-motivated individual, I am continuously seeking new challenges and opportunities to learn and develop professionally 🚀
+          </p>
+        </div>
+      </div>
+     
+      <h2 class="project-title">Projects</h2>
       <div class="project-container">
         <a
           class="project-item"
@@ -136,50 +195,24 @@
           <i class="ri-arrow-right-up-line demo-arrow"></i>
           <img src="./JSblackjack.png" alt="" />
         </a>
+        <a
+        class="project-item"
+        href="https://devsbyelias.com"
+        target="_blank"
+      >
+        <h3>Portfolio</h3>
+        <p>My personal portfolio with a sleek and modern design</p>
+        <i class="ri-arrow-right-up-line demo-arrow"></i>
+        <img src="portfolio.png" alt="" />
+      </a>
       </div>
-      <h2 class="about-title">About <span>Me</span></h2>
-      <div class="about">
-        <div class="aboutme">
-          <p>
-            I'm a IT-Automation Engineering student at Satakunta University of
-            Applied Sciences
-          </p>
-          <p>
-            Several years of experience in customer service, teamwork, and
-            problem-solving. Currently working as a IT-support Specialist at Dustin
-            Finland Oy
-          </p>
-          <p>
-            My sights are set on a journey of growth. I'm all about ramping up
-            my coding skills and broadening my overall IT know-how
-          </p>
-          <p>
-            As a self-motivated individual, I am continuously seeking new
-            challenges and opportunities to learn and develop professionally
-          </p>
-        </div>
+      <div class="github-container">
+        <a href="https://github.com/DevsByElias?tab=repositories" target="_blank class="github-button"
+        >Check out my Github<i class="ri-github-fill"></i
+          ></i>
+        </a>
+      </a>
       </div>
-      <div class="skills-container">
-        <h2 class="attribute-title">My <span>Skills</span></h2>
-      <div class="myskills-container">
-      <p>HTML <i class="ri-html5-line"></i></p>
-      <P>CSS <i class="ri-css3-line"></i></P>
-      <P>JavaScript <i class="ri-javascript-line"></i></P>
-      <p>PowerShell <i class="ri-terminal-box-line"></i></p>
-    </div>
-    </div>
-      <h2 class="journey-title">Coding <span>Journey</span></h2>
-      <div class="coding-journey">
-        <div class="myjourney">
-          <p>
-            In early 2022, I dipped my toes into the coding pool with C#. It was a bit daunting at first, I won't lie. But with the help of some fantastic Udemy courses, I got the hang of the basics pretty quickly.
-          </p>
-          <p>I shifted my gears towards frontend development later in the year. HTML and CSS kinda became my new best friends. I spent many hours studying and practicing on Scrimba and slowly but surely, I started crafting some decent-looking web pages.</p>
-          <p>
-            I'm currently focused on JavaScript skills through practice and exploration. Once I feel confident, I plan to continue on learning React and incorporating Tailwind CSS into my toolkit. This strategic approach ensures that I build a solid foundation before venturing into more advanced frameworks and libraries. I'm excited about the possibilities that lie ahead and eager to continue my journey of growth and learning in the web development.
-          </p>
-        </div>
-      </div>   
       <div class="contact-titles">
         <h2 class="contact-subtitle">Get in <span>Touch</span></h2>
         <h2 class="contact-title">Contact <span>Me</span></h2>
