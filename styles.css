@@ -6,7 +6,6 @@
 }
 body {
   margin: auto;
-
   overflow: auto;
   background: linear-gradient(
     315deg,
@@ -362,6 +361,7 @@ i {
   margin: 0 auto;
   display: flex;
   max-width: fit-content;
+  text-align: center;
 }
 .contact-info {
   padding: 15px;
