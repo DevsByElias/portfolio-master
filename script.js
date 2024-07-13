@@ -18,24 +18,6 @@ document.querySelectorAll(".project-item").forEach((item) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll(".nav_link");
-
-  navLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      const targetSection = document.querySelector(link.getAttribute("href"));
-
-      if (targetSection) {
-        window.scrollTo({
-          top: targetSection.offsetTop,
-          behavior: "smooth",
-        });
-      }
-    });
-  });
-});
-document.addEventListener("DOMContentLoaded", function () {
   const scrollUpBtn = document.getElementById("scrollUpBtn");
 
   window.onscroll = function () {

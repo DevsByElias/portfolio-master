@@ -7,74 +7,9 @@
 body {
   margin: auto;
   overflow: auto;
-  background: linear-gradient(
-    315deg,
-    rgba(223, 218, 218, 0.281) 3%,
-    rgb(199 210 254) 38%
-  );
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-  background-attachment: fixed;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
+  background: rgb(28, 25, 23);
 }
 
-.wave {
-  background: rgb(255 255 255 / 25%);
-  border-radius: 1000% 1000% 0 0;
-  position: fixed;
-  width: 200%;
-  height: 12em;
-  animation: wave 10s -3s linear infinite;
-  transform: translate3d(0, 0, 0);
-  opacity: 0.8;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.wave:nth-of-type(2) {
-  bottom: -1.25em;
-  animation: wave 18s linear reverse infinite;
-  opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-  bottom: -2.5em;
-  animation: wave 30s -1s reverse infinite;
-  opacity: 0.9;
-}
-
-@keyframes wave {
-  2% {
-    transform: translateX(1);
-  }
-
-  25% {
-    transform: translateX(-25%);
-  }
-
-  50% {
-    transform: translateX(-50%);
-  }
-
-  75% {
-    transform: translateX(-25%);
-  }
-
-  100% {
-    transform: translateX(1);
-  }
-}
 h1,
 h2 {
   font-family: "Lexend", sans-serif;
@@ -85,21 +20,97 @@ p {
 .skill {
   margin-bottom: 20px;
 }
+.stack {
+  display: flex;
+  gap: 6px;
+  margin-top: 1rem;
+}
+.info {
+  padding: 1rem;
+}
+
+.stack h4 {
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #333;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+}
 
 .skill-title {
   margin-bottom: 5px;
+}
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 30px;
+  width: 4px;
+  background: rgb(253, 186, 116);
+}
+
+.timeline-item {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 40px;
+}
+
+.timeline-circle {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background: rgb(253, 186, 116);
+  border-radius: 50%;
+}
+
+.timeline-item .timeline-content {
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.timeline-content h4 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: rgb(255, 85, 85);
+  background-color: #ffffff;
+  max-width: fit-content;
+  border-radius: 8px;
+  padding: 8px;
+}
+.timeline-content h3 {
+  font-size: 1.25rem;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: rgb(120, 113, 108);
 }
 
 .progress {
   width: 100%;
   height: 20px;
-  background-color: rgba(129, 141, 248, 0.219);
+  background-color: rgb(253, 186, 116);
   border-radius: 10px;
 }
 
 .progress-bar {
   height: 100%;
-  background-color: rgb(129 140 248);
+  background-color: rgb(255, 85, 85);
   border-radius: 10px;
   text-align: center;
   line-height: 20px;
@@ -119,14 +130,14 @@ p {
   margin: 18rem 0rem;
 }
 .logo span {
-  color: rgb(129 140 248);
+  color: rgb(253, 186, 116);
 }
 
 .hero h1 {
   font-size: 3.5rem;
 }
 .hero h1 span {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .hero h3 {
   margin-top: 25px;
@@ -143,10 +154,10 @@ p {
 }
 a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .auto-type {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   font-family: "Source Code Pro", monospace;
 }
@@ -164,7 +175,7 @@ a {
   padding: 0.7rem;
 }
 .nav_link:hover {
-  border-bottom: 2px solid rgb(129 140 248);
+  border-bottom: 2px solid rgb(68, 64, 60);
 }
 
 .logo {
@@ -172,8 +183,7 @@ a {
   font-size: 1.5rem;
   padding-top: 10px;
 }
-.about,
-.myjourney {
+.about {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
@@ -183,7 +193,6 @@ a {
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 5rem;
-  box-shadow: 0 20px 15px -20px rgba(0, 0, 0, 0.144);
 }
 .do-title {
   text-align: center;
@@ -221,12 +230,6 @@ a {
   margin-bottom: 5rem;
 }
 
-.journey-title {
-  margin-top: 10rem;
-  text-align: center;
-  font-size: 3rem;
-}
-
 .list-item {
   text-align: center;
   font-size: 1.5rem;
@@ -239,7 +242,7 @@ a {
   right: 40px;
 }
 i {
-  color: rgb(129 140 248);
+  color: rgb(255, 255, 255);
 }
 
 .project-item i {
@@ -259,16 +262,16 @@ i {
   margin-top: 10rem;
 }
 .project-item {
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 1.6rem;
-  box-shadow: 0 20px 15px -20px rgba(0, 0, 0, 0.144);
-  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 .project-item h3 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .project-item a {
   text-align: center;
@@ -280,7 +283,7 @@ i {
   margin-top: 15px;
 }
 .project-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.3s ease;
   cursor: pointer;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.144),
@@ -289,6 +292,7 @@ i {
 
 .project-item p {
   margin-top: 15px;
+  color: rgb(120, 113, 108);
 }
 .demo-arrow {
   position: absolute;
@@ -306,13 +310,23 @@ i {
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 5rem;
-  text-align: center;
-  align-items: center;
   font-size: 1.5rem;
 }
 .github-container a {
-  border-bottom: 2px solid rgb(129 140 248);
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #333;
+  margin: 0;
+  text-align: center;
 }
+.github-container:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -322,7 +336,6 @@ i {
   border-radius: 12px;
   text-align: center;
   overflow: hidden;
-  box-shadow: 0 20px 15px -20px rgba(0, 0, 0, 0.144);
 }
 
 .myskills-container {
@@ -349,7 +362,7 @@ i {
 }
 
 .myskills-container h3 {
-  border-bottom: 2px solid rgb(129 140 248);
+  border-bottom: 3px solid rgb(255, 255, 255);
   margin: 12px;
 }
 .attribute-title {
@@ -399,7 +412,7 @@ i {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(129 140 248);
+  background: rgb(120, 113, 108);
   border-radius: 5px;
 }
 
