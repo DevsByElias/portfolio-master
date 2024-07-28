@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.querySelectorAll(".project-item").forEach((item) => {
   item.addEventListener("mouseover", function () {
-    this.querySelector("i.demo-arrow").style.color = "#fdba74";
+    this.querySelector("i.demo-arrow").style.color = "#1b2970";
   });
 
   item.addEventListener("mouseout", function () {

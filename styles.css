@@ -1,22 +1,28 @@
 :root {
-  font-family: "Lexend", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
+
 .html {
   scroll-behavior: smooth;
 }
 body {
   margin: auto;
   overflow: auto;
-  background: rgb(28, 25, 23);
+  background: rgb(17, 19, 24);
   color: #ffffff;
 }
 
+p {
+  color: rgb(137, 148, 174);
+}
 h1,
 h2 {
-  font-family: "Lexend", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 p {
-  font-family: "Ropa Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .skill {
   margin-bottom: 20px;
@@ -29,13 +35,40 @@ p {
 .info {
   padding: 1rem;
 }
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  color: rgb(137, 148, 174);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.verified-badge {
+  width: 20px;
+  height: 20px;
+}
 
 .stack h4 {
-  background-color: #f0f0f0;
+  background-color: rgb(22, 27, 39);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-size: 0.875rem;
-  color: #333;
+  color: rgb(27, 41, 112);
   margin: 0;
   display: inline-block;
   text-align: center;
@@ -59,7 +92,7 @@ p {
   bottom: 0;
   left: 30px;
   width: 4px;
-  background: rgb(253, 186, 116);
+  background: rgb(27, 41, 112);
 }
 
 .timeline-item {
@@ -74,7 +107,7 @@ p {
   left: 15px;
   width: 30px;
   height: 30px;
-  background: rgb(253, 186, 116);
+  background: rgb(27, 41, 112);
   border-radius: 50%;
 }
 
@@ -86,11 +119,12 @@ p {
 .timeline-content h4 {
   margin: 0 0 10px;
   font-size: 1rem;
-  color: rgb(255, 85, 85);
-  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  background-color: rgb(22, 27, 39);
   max-width: fit-content;
   border-radius: 8px;
   padding: 8px;
+  font-family: "Lexend", sans-serif;
 }
 .timeline-content h3 {
   font-size: 1.25rem;
@@ -99,24 +133,7 @@ p {
 .timeline-content p {
   margin: 0;
   font-size: 1rem;
-  color: rgb(120, 113, 108);
-}
-
-.progress {
-  width: 100%;
-  height: 20px;
-  background-color: rgb(253, 186, 116);
-  border-radius: 10px;
-}
-
-.progress-bar {
-  height: 100%;
-  background-color: rgb(255, 85, 85);
-  border-radius: 10px;
-  text-align: center;
-  line-height: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 1rem;
+  color: rgb(137, 148, 174);
 }
 
 .container {
@@ -130,12 +147,9 @@ p {
   text-align: center;
   margin: 18rem 0rem;
 }
-.logo span {
-  color: rgb(253, 186, 116);
-}
 
 .hero h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 .hero h1 span {
   color: rgb(255, 255, 255);
@@ -155,7 +169,7 @@ p {
 }
 a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(137, 148, 174);
 }
 .auto-type {
   color: rgb(255, 255, 255);
@@ -166,23 +180,12 @@ a {
   font-family: "Source Code Pro", monospace;
   font-size: 1.5rem;
 }
-.nav-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 1.5rem;
-  gap: 1rem;
-  border-radius: 12px;
-  padding: 0.7rem;
-}
-.nav_link:hover {
-  border-bottom: 2px solid rgb(68, 64, 60);
-}
 
 .logo {
-  position: relative;
+  text-align: center;
   font-size: 1.5rem;
   padding-top: 10px;
+  font-family: "Ropa Sans", sans-serif;
 }
 .about {
   display: flex;
@@ -195,40 +198,18 @@ a {
   margin-top: 2rem;
   margin-bottom: 5rem;
 }
-.do-title {
-  text-align: center;
-  border-bottom: 2px solid rgb(129 140 248);
-}
+
 .about h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .about p {
   margin-top: 25px;
 }
 
-.about-title {
-  text-align: center;
-  font-size: 3rem;
-}
 .contact-titles {
   margin-top: 15rem;
   text-align: center;
   font-size: 3rem;
-}
-
-.aboutme,
-.coding-journey {
-  padding: 10px;
-}
-.aboutme p,
-.coding-journey p,
-.myskills-container,
-.attributes-container {
-  font-size: 1.1rem;
-  max-width: 35em;
-  padding: 5px;
-  text-align: center;
-  margin-bottom: 5rem;
 }
 
 .list-item {
@@ -247,7 +228,7 @@ i {
 }
 
 .project-item i {
-  color: #474853;
+  color: rgb(137, 148, 174);
 }
 .project-container {
   display: grid;
@@ -258,8 +239,7 @@ i {
   margin-top: 2rem;
 }
 .project-title {
-  text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 10rem;
 }
 .project-item {
@@ -267,9 +247,10 @@ i {
   text-decoration: none;
   color: inherit;
   padding: 1rem;
-  border: 3px solid #ccc;
+  border: 1px solid #cccccc25;
   border-radius: 8px;
   transition: all 0.3s ease;
+  background-color: rgb(21, 24, 30);
 }
 .project-item h3 {
   font-size: 1rem;
@@ -293,14 +274,9 @@ i {
 
 .project-item p {
   margin-top: 15px;
-  color: rgb(120, 113, 108);
+  color: rgb(137, 148, 174);
 }
-.demo-arrow {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1.5rem;
-}
+
 .github-container {
   display: flex;
   flex-direction: column;
@@ -314,13 +290,14 @@ i {
   font-size: 1.5rem;
 }
 .github-container a {
-  background-color: #f0f0f0;
+  background-color: rgb(22, 27, 39);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   font-size: 0.875rem;
-  color: #333;
+  color: #ffffff;
   margin: 0;
   text-align: center;
+  border: 1px solid #cccccc25;
 }
 .github-container:hover {
   transform: scale(1.05);
@@ -339,15 +316,6 @@ i {
   overflow: hidden;
 }
 
-.myskills-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-radius: 10px;
-  padding: 1rem;
-  max-width: fit-content;
-  margin: 0 auto;
-  position: relative;
-}
 .tag {
   font-size: 1.5rem;
   margin: 2rem;
@@ -362,10 +330,6 @@ i {
   justify-content: center;
 }
 
-.myskills-container h3 {
-  border-bottom: 3px solid rgb(255, 255, 255);
-  margin: 12px;
-}
 .attribute-title {
   text-align: center;
   font-size: 3rem;
@@ -388,6 +352,13 @@ i {
 .footer__social {
   margin-top: 5rem;
   font-size: 12px;
+}
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #20242d;
+  bottom: 0;
+  left: 0;
 }
 
 #scrollUpBtn {
@@ -439,9 +410,6 @@ i {
     margin-left: 10px;
     margin-right: 10px;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .logo {
-    margin-left: 8rem;
   }
 }
 @media screen and (max-width: 1200px) {
