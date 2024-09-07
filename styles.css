@@ -377,7 +377,6 @@ i {
   padding: 2rem 0;
   font-size: 1rem;
   transition: right 0.3s ease-in-out;
-  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-menu.active {
@@ -456,8 +455,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(252, 252, 252);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fbfbfb;
 }
 .underline {
   text-decoration: underline;
@@ -481,15 +479,6 @@ nav {
   transform: scale(1.05);
   transition: all 0.3s ease;
   cursor: pointer;
-}
-.project-item i.ri-arrow-right-up-line {
-  position: absolute;
-  top: 12%;
-  right: 10px;
-  font-size: 1rem;
-  color: #ffce00;
-  transform: translateY(-50%);
-  transition: color 0.3s ease;
 }
 
 ::-webkit-scrollbar {
