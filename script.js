@@ -37,3 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+const hamMenu = document.querySelector(".ham-menu");
+const navScreenMenu = document.querySelector(".nav-menu");
+
+hamMenu.addEventListener("click", () => {
+  hamMenu.classList.toggle("active");
+  navScreenMenu.classList.toggle("active");
+});
