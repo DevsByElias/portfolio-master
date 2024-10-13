@@ -24,7 +24,10 @@ p {
   line-height: 1.6; 
   font-size: 14px; 
 }
-
+#hero h3{
+  color: #b5b5b5;
+  font-size: 1.3rem;
+}
 .container {
   color: #fff;
   width: 100%;
@@ -204,6 +207,7 @@ section {
   border-radius: 4px;
   padding: 10px;
   align-items: center;
+  
 }
 
 .skill-item img {
@@ -218,7 +222,7 @@ section {
 
 .tooltip .tooltip-text {
   visibility: hidden;
-  width: 120px;
+  width: 100px;
   background-color: #21222c;
   border: solid #30353b;
   border-width: 1px;
@@ -278,8 +282,8 @@ section {
   transition: transform 0.3s ease-in-out;
 }
 
-.home__social-link img:hover,
-.skill-item:hover {
+.home__social-link img:hover
+ {
   transform: scale(1.3);
 }
 
@@ -437,26 +441,45 @@ section {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .back-button .text {
+    display: none; 
+  }
+
+  .back-button::before {
+    content: "\2190"; 
+    font-size: 16px;
+    padding-right: 8px; 
+  }
   .back-button {
-    padding: 4px 8px;
+    height: 32px; 
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 40px;
+    font-size: 8px; 
   }
 }
+
 
 @media screen and (max-width: 800px) {
   .project-container {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-
   .back-button {
-    padding: 6px 12px;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
+    height: 32px; 
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 40px;
+    font-size: 8px; 
+  }
+
+  .back-button .text {
+    display: none; 
   }
 
   .back-button::before {
-    margin-right: 5px;
+    content: "\2190"; 
     font-size: 16px;
+    padding-right: 8px; 
   }
 }
 
@@ -464,9 +487,20 @@ section {
   .project-container {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-
   .back-button {
-    padding: 8px 16px;
-    font-size: 14px;
+    height: 32px; 
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 40px;
+    font-size: 8px;
+  }
+  .back-button .text {
+    display: none;
+  }
+
+  .back-button::before {
+    content: "\2190"; 
+    font-size: 16px;
+    padding-right: 8px; 
   }
 }
