@@ -1,36 +1,42 @@
 html,
 body {
-  color: #fff;
+  
   height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   scroll-behavior: smooth;
-  background-color: #282a36;
+  background-color: #1c1e26;
 }
 
 h1,
 h2,
-h3 {
+h3, .project-item h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600; 
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
+  color: #ffffff; 
 }
 
 body,
-p {
+p, .timeline-item p, .project-item p {
   font-family: "Open Sans", sans-serif; 
   line-height: 1.6; 
-  font-size: 14px; 
+  font-size: 14px;
+  color: #cccccc; 
+}
+.img {
+  width: 100%;
 }
 #hero h3{
   color: #b5b5b5;
   font-size: 1.3rem;
 }
+
 .container {
   color: #fff;
-  width: 100%;
+  width: 75%;
   max-width: 1200px;
   margin: auto;
   padding: 20px;
@@ -72,13 +78,13 @@ section {
 }
 
 #about {
-  margin-top: 2rem; 
+  padding: 1rem 
 }
 
 .about-section {
   max-width: 800px; 
   margin: 0 auto; 
-  padding: 20px; 
+  
 }
 
 .about-section p {
@@ -126,11 +132,16 @@ section {
   left: 0;
   top: 8px;
 }
+.timeline::before {
+  background-color: #47c97b; 
+  height: 100%;
+}
 
 .pulse-icon {
   background-color: rgba(47, 236, 110, 0.781);
   animation: pulse 1.5s infinite;
   border: 2px solid rgba(23, 78, 44, 0.603);
+  left: -1.5px;
 }
 
 @keyframes pulse {
@@ -294,6 +305,8 @@ section {
 .footer {
   align-items: center;
   text-align: center;
+  padding: 10px 0;
+  font-size: 0.85rem;
 }
 
 .cta,
@@ -343,6 +356,7 @@ section {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
+  
 }
 
 .cta:active,
@@ -504,3 +518,4 @@ section {
     padding-right: 8px; 
   }
 }
+
