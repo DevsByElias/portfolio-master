@@ -1,4 +1,4 @@
-html,
+
 body {
   
   height: 100%;
@@ -8,6 +8,17 @@ body {
   align-items: center;
   scroll-behavior: smooth;
   background-color: #1c1e26;
+}
+html
+ {
+  
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  
 }
 
 h1,
@@ -263,10 +274,7 @@ section {
 .language-item {
   display: flex; 
   align-items: center; 
-  border: solid rgb(82, 78, 78);
-  background-color: #21222c;
-  border-radius: 28px;
-  border-width: 1px;
+
   margin: 10px;
   padding: 10px; 
   text-align: center; 
@@ -309,6 +317,9 @@ section {
   font-size: 0.85rem;
 }
 
+#toggleTheme{
+  margin-left: 28rem;
+}
 .cta,
 .github-button,
 .back-button {
@@ -415,6 +426,7 @@ section {
   display: flex;
   gap: 5px;
   margin-top: 10px;
+  font-family: "JetBrains Mono", monospace;
 }
 
 .stack h4 {
@@ -445,6 +457,71 @@ section {
 
 .link-icon {
   margin-left: 15px;
+}
+
+body.light-mode {
+  background-color: #f7f7f7;
+  color: #333333;
+}
+body.light-mode p,
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3 {
+  color: #222222;
+}
+
+body.light-mode .container {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+body.light-mode .project-item {
+  background-color: #eaeaea;
+  color: #333333;
+}
+
+body.light-mode .under-line {
+  background-color: #d0d0d0;
+}
+
+body.light-mode .timeline-item h3,
+body.light-mode .timeline-item p {
+  color: #333333;
+}
+
+body.light-mode .timeline::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(47, 236, 110, 0.781) 0%,
+    rgba(47, 236, 110, 0.267) 8%,
+    #666666 19%
+  );
+}
+
+body.light-mode .back-button {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.light-mode .cta, 
+body.light-mode .github-button, 
+body.light-mode .back-button {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.light-mode .timeline-icon {
+  background-color: #333333;
+}
+body.light-mode .stack h4{
+  background-color: #333333;
+  color:#ffffff; ;
+}
+body.light-mode .pulse-icon {
+  background-color: rgba(47, 236, 110, 0.781);
+  animation: pulse 1.5s infinite;
+  border: 2px solid rgba(23, 78, 44, 0.603);
+  left: -1.5px;
 }
 
 @media screen and (max-width: 550px) {
@@ -516,6 +593,9 @@ section {
     content: "\2190"; 
     font-size: 16px;
     padding-right: 8px; 
+  }
+  #toggleTheme{
+    margin-left: 5rem;
   }
 }
 
