@@ -317,9 +317,7 @@ section {
   font-size: 0.85rem;
 }
 
-#toggleTheme{
-  margin-left: 28rem;
-}
+
 .cta,
 .github-button,
 .back-button {
@@ -471,7 +469,7 @@ body.light-mode h3 {
 }
 
 body.light-mode .container {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
   color: #333333;
 }
 
@@ -539,7 +537,10 @@ body.light-mode .pulse-icon {
   .back-button::before {
     content: "\2190"; 
     font-size: 16px;
-    padding-right: 8px; 
+    padding-right: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
   }
   .back-button {
     height: 32px; 
@@ -570,7 +571,10 @@ body.light-mode .pulse-icon {
   .back-button::before {
     content: "\2190"; 
     font-size: 16px;
-    padding-right: 8px; 
+    padding-right: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
   }
 }
 
@@ -592,10 +596,11 @@ body.light-mode .pulse-icon {
   .back-button::before {
     content: "\2190"; 
     font-size: 16px;
-    padding-right: 8px; 
+    padding-right: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
-  #toggleTheme{
-    margin-left: 5rem;
-  }
+ 
 }
 
